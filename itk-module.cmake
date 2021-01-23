@@ -18,10 +18,6 @@ itk_module(PhaseUnwrapping
     ITKFFT
     ITKThresholding
     ITKImageNoise
-  COMPILE_DEPENDS
-    ITKKWSys
-  TEST_DEPENDS
-  #ITKTestKernel 
   DESCRIPTION
     "${DOCUMENTATION}"
   EXCLUDE_FROM_DEFAULT
