@@ -1,6 +1,6 @@
 itk_module_test()
 
-Set(ITK${itk-module}Tests
+Set(PhaseUnwrappingTests
   itkDCTImageFilterTest.cxx
   itkDCTPhaseUnwrappingImageFilterTest.cxx
 #  itkHelmholtzDecompositionImageFilterTest.cxx
@@ -19,16 +19,16 @@ Set(ITK${itk-module}Tests
   itkWrapPhaseImageFilterTest.cxx
 )
 
-CreateTestDriver(${itk-module}  "${${itk-module}-Test_LIBRARIES}" "${ITK${itk-module}Tests}")
+CreateTestDriver(PhaseUnwrapping  "${PhaseUnwrapping-Test_LIBRARIES}" "${PhaseUnwrappingTests}")
 
-itk_add_test(NAME itkDCTImageFilterTest COMMAND ${itk-module}TestDriver itkDCTImageFilterTest )
-itk_add_test(NAME itkDCTPhaseUnwrappingImageFilterTest COMMAND ${itk-module}TestDriver itkDCTPhaseUnwrappingImageFilterTest )
-itk_add_test(NAME itkIndexValuePairTest COMMAND ${itk-module}TestDriver itkIndexValuePairTest )
-itk_add_test(NAME itkItohPhaseUnwrappingImageFilterTest COMMAND ${itk-module}TestDriver itkItohPhaseUnwrappingImageFilterTest )
-itk_add_test(NAME itkDCTPoissonSolverImageFilterTest COMMAND ${itk-module}TestDriver itkDCTPoissonSolverImageFilterTest )
-itk_add_test(NAME itkPhaseDerivativeVarianceImageFilterTest COMMAND ${itk-module}TestDriver itkPhaseDerivativeVarianceImageFilterTest )
-itk_add_test(NAME itkPhaseExamplesImageSourceTest COMMAND ${itk-module}TestDriver itkPhaseExamplesImageSourceTest )
-itk_add_test(NAME itkPhaseQualityImageFilterTest COMMAND ${itk-module}TestDriver itkPhaseQualityImageFilterTest )
-itk_add_test(NAME itkPhaseResidueImageFilterTest COMMAND ${itk-module}TestDriver itkPhaseResidueImageFilterTest )
-itk_add_test(NAME itkWrappedPhaseLaplacianImageFilterTest COMMAND ${itk-module}TestDriver itkWrappedPhaseLaplacianImageFilterTest )
-itk_add_test(NAME itkWrapPhaseFunctorTest COMMAND ${itk-module}TestDriver itkWrapPhaseFunctorTest )
+itk_add_test(NAME itkDCTImageFilterTest COMMAND PhaseUnwrappingTestDriver itkDCTImageFilterTest )
+itk_add_test(NAME itkDCTPhaseUnwrappingImageFilterTest COMMAND PhaseUnwrappingTestDriver itkDCTPhaseUnwrappingImageFilterTest )
+itk_add_test(NAME itkIndexValuePairTest COMMAND PhaseUnwrappingTestDriver itkIndexValuePairTest )
+itk_add_test(NAME itkItohPhaseUnwrappingImageFilterTest COMMAND PhaseUnwrappingTestDriver itkItohPhaseUnwrappingImageFilterTest )
+itk_add_test(NAME itkDCTPoissonSolverImageFilterTest COMMAND PhaseUnwrappingTestDriver itkDCTPoissonSolverImageFilterTest )
+itk_add_test(NAME itkPhaseDerivativeVarianceImageFilterTest COMMAND PhaseUnwrappingTestDriver itkPhaseDerivativeVarianceImageFilterTest )
+itk_add_test(NAME itkPhaseExamplesImageSourceTest COMMAND PhaseUnwrappingTestDriver itkPhaseExamplesImageSourceTest )
+itk_add_test(NAME itkPhaseQualityImageFilterTest COMMAND PhaseUnwrappingTestDriver itkPhaseQualityImageFilterTest )
+itk_add_test(NAME itkPhaseResidueImageFilterTest COMMAND PhaseUnwrappingTestDriver itkPhaseResidueImageFilterTest )
+itk_add_test(NAME itkWrappedPhaseLaplacianImageFilterTest COMMAND PhaseUnwrappingTestDriver itkWrappedPhaseLaplacianImageFilterTest )
+itk_add_test(NAME itkWrapPhaseFunctorTest COMMAND PhaseUnwrappingTestDriver itkWrapPhaseFunctorTest )
