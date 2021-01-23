@@ -20,6 +20,4 @@ itk_module(PhaseUnwrapping
     ITKImageNoise
   DESCRIPTION
     "${DOCUMENTATION}"
-  EXCLUDE_FROM_DEFAULT
-  ENABLE_SHARED
 )
