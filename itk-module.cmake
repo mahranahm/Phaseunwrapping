@@ -18,6 +18,11 @@ itk_module(PhaseUnwrapping
     ITKFFT
     ITKThresholding
     ITKImageNoise
+<<<<<<< HEAD
+=======
+  TEST_DEPENDS
+    ITKTestKernel 
+>>>>>>> parent of 40ed2cd... remove testing
   DESCRIPTION
     "${DOCUMENTATION}"
 )
